@@ -1,0 +1,196 @@
+#entire-page{
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+
+#starting{
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    transition: 0.2s linear;
+    z-index: 9;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#nav-heading{
+
+    position: absolute;
+    left:2%;
+    top: 25%;
+
+}
+.nav-links{
+    position: absolute;
+    right: 43.5%;
+}
+.nav-link{
+
+    margin-left: 7%;
+
+}
+
+#nav-logos{
+    
+    position: absolute;
+    left: 92%;
+    top: 30%;
+}
+
+.nav-logo{
+    margin-left: 4%;
+}
+
+
+#home{
+    margin-top: 5%;
+    height: 90vh;
+    background-attachment:fixed;
+    
+}
+
+#introduction{
+    display: flex;
+    margin-top: 14%;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+
+#home-name{
+    font-size:300%;
+    font-weight: 900;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#home-title{
+    margin-top: 1%;
+    font-size: 130%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home-discription{
+    
+    font-size: 130%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home-button{
+    margin-top: 1%;
+}
+
+
+#about{
+    height: 91vh;
+  
+}
+
+.about-card{
+    height: 90%;
+    margin: 2.5%;
+}
+
+#profile-img{
+    margin-top: 17%;
+    margin-left: 14%;
+    border-radius: 5%;
+}
+
+#about-profile{
+    margin-top: 9%;
+    margin-left: 6%;
+}
+
+.flex-row{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-info{
+    font-size: 130%;
+    font-weight: 500;
+}
+
+.about-data{
+    margin-left: 2%;
+    font-size: 120%;
+    color: rgb(105, 105, 105);
+}
+
+#about-skills{
+    margin-top: 3%;
+    margin-left: 4%;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.about-skill{
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 5%;
+}
+
+.about-skill-name{
+    color: gray;
+    font-size: 125%;
+}
+
+#skills{
+    height: 90vh;
+    background-color: red;
+}
+
+::ng-deep .mdc-linear-progress {
+    height: 14px !important;
+}
+
+::ng-deep .mdc-linear-progress__bar-inner {
+    border-top-width: 14px !important;
+  }
+
+#about-heading{
+    font-size: 220%;
+    font-weight: 600;
+    
+}
+
+#about-hr{
+    height: 5px;
+    width: 12%;
+    border-radius: 20%;
+    background-color: blue;
+    position: absolute;
+    left: 2.2%;
+}
+
+#discription{
+    margin-top: 8%;
+}
+
+#about-discription{
+    margin-top: 5%;
+}
+
+.about-myself{
+    font-size: 150%;
+    color: gray;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 3%;
+    line-height: 1.4;
+}
+
+
+#projects{
+    height: 90vh;
+    background-color: orange;
+}
+#contact{
+    height: 90vh;
+    
+}
