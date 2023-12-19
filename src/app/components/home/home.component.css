@@ -27,7 +27,7 @@
 }
 .nav-links{
     position: absolute;
-    right: 43.5%;
+    right: 43%;
 }
 .nav-link{
 
@@ -141,11 +141,6 @@
     font-size: 125%;
 }
 
-#skills{
-    height: 90vh;
-    background-color: red;
-}
-
 ::ng-deep .mdc-linear-progress {
     height: 14px !important;
 }
@@ -185,6 +180,216 @@
     line-height: 1.4;
 }
 
+#education{
+    height: 90vh;
+    background-color: #ffffff;
+}
+
+
+#education-heading{
+    
+    font-size: 220%;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.education-icon1{
+    position: absolute;
+    top: 7.5%;
+    left: -2.3%;
+    height: 30px;
+    font-size: 30px;
+    width: 30px;
+}
+
+.education-icon2{
+    position: absolute;
+    top: 62%;
+    left: -2.4%;
+    height: 30px;
+    font-size: 30px;
+    width: 30px;
+}
+
+.education-card1{
+    border-left:solid 2.5px #3F51B5;
+    height: 48%;
+    margin-top: 7%;
+}
+
+
+.education-card2{
+    border-left:solid 2.5px #3F51B5;
+    height: 48%;
+    margin-top: 5%;
+}
+
+#education-level1{
+    position: absolute;
+    top: 9%;
+    left: 4%;
+    font-size: 130%;
+    color:#3F51B5;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#education-level2{
+    position: absolute;
+    top: 63%;
+    left: 4%;
+    font-size: 130%;
+    color:#3F51B5;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.education-date{
+    background-color: #f1f3ff;
+    width: 16%;
+    height: 11%;
+    border-radius: 7%;
+    text-align: center;
+    color: #3F51B5;
+    margin-top: 1%;
+}
+
+.education-text{
+    font-size: 130%;
+    color: rgb(117, 117, 117);
+    line-height: 1.2;
+    margin-right: 10%;
+}
+
+#certificate-heading{
+    font-size: 220%;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#core-java{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#is-img{
+    position: absolute;
+    left: -1.8%;
+    top: 8%;
+}
+
+#ln-img1{
+    position: absolute;
+    left: -1.8%;
+    top: 45%;
+}
+#ln-img2{
+    position: absolute;
+    left: -1.8%;
+    top: 81.5%;
+}
+
+#cf1{
+    position: absolute;
+    top: 8.5%;
+    left: 3.5%;
+    font-size: 130%;
+    color:#3F51B5;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#cf2{
+    position: absolute;
+    top: 45%;
+    left: 3.5%;
+    font-size: 130%;
+    color:#3F51B5;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cf3{
+    position: absolute;
+    top: 81.5%;
+    left: 3.5%;
+    font-size: 130%;
+    color:#3F51B5;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#certificate-card1{
+    border-left:solid 2.5px #3F51B5;
+    height: 30%;
+    margin-top:5.5%;
+    
+}
+
+#certificate-card2{
+    border-left:solid 2.5px #3F51B5;
+    height: 30%;
+    margin-top:5%;
+    
+}
+
+#certificate-card3{
+    border-left:solid 2.5px #3F51B5;
+    height: 30%;
+    margin-top:5%;
+    
+}
+
+.cf-date{
+    background-color: #f1f3ff;
+    width: 21%;
+    height: 13%;
+    border-radius: 7%;
+    text-align: center;
+    color: #3F51B5;
+    margin-top: 7%;
+}
+
+.cf-company{
+    position: absolute;
+    top: -4%;
+    left: 3.5%;
+    color: gray;
+}
+
+#skills{
+    height: 90vh;
+   
+}
+
+#skills-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+
+#skills-heading{
+    margin-top: 1.8%;
+    font-size: 300%;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#skills-hr{
+    height: 5px;
+    width: 2.5%;
+    border-radius: 20%;
+    background-color: blue;
+    position: absolute;
+    top: 10%;
+    left: 48.6%;
+}
+
+.skills-card{
+    margin-top: 20%;
+    height:50%;
+    border-radius: 5%;
+}
 
 #projects{
     height: 90vh;
