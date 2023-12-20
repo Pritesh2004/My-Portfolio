@@ -1,7 +1,7 @@
 #screen {
     overflow-y: hidden;
     overflow-x: hidden;
-    height: 235vh;
+    height: 450vh;
     position: relative;
     margin: 0;
 
@@ -112,9 +112,126 @@
     transition: 0.3s ease-out;
 }
 
-#about {
-    height: 100vh;
+#content {
+    height: 315vh;
+    background-color: #f5f5f5;
+    border-top: solid 2px transparent;
+}
+
+#content-div{
+    margin-top: 25px;
+    margin-left: 5%;
+    height: 302vh;
+    width: 90vw;
     background-color: white;
+}
+
+#about{
+    height: 80vh;
+    background-color: white;
+}
+
+#about-head{
+padding-top: 20px;
+padding-left: 30px;
+}
+
+#about-heading{
+font-size: 17px;
+color: teal;
+font-weight: bold;
+
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about-title{
+    font-size: 33px;
+    font-weight: bold;
+}
+
+#about-hr{
+    width: 130px;
+    position: relative;
+    bottom: 22px;
+    right: 540px;
+    color:orangered;
+    
+}
+
+#about-content{
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-img{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 380px;
+    
+}
+
+#profile-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 30px;
+}
+
+#profile-title{
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 25px;
+    color: rgb(243, 65, 0);
+}
+
+#profile-title-info{
+font-size: 19px;
+color: gray;
+}
+
+#about-me{
+    font-size: 19px;
+    color: gray;
+    line-height: 25px;
+    margin-right: 100px;
+    margin-top: 25px;
+}
+
+#profile-content{
+    margin-top: 10px;
+display: flex;
+flex-direction: row;
+}
+
+
+#profile-content1{
+
+}
+
+#profile-content2{
+    margin-left: 150px;
+}
+
+.arrow{
+    font-size: 20px;
+    color: orangered;
+}
+
+.profile-q{
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.profile-a{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
 }
 
 #bottom-nav {
@@ -241,6 +358,52 @@
     #copyright {
         position: absolute;
         bottom: 40px;
+    }
+
+    #about-hr{
+        position: relative;
+        right: 30px;
+    }
+
+    #about-title{
+        font-size: 26px;
+    }
+
+    #profile-img{
+        width: 300px;
+    }
+
+    #about-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #profile-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #profile-content2{
+        margin-left: 0;
+    }
+
+    .profile-q{
+        font-size: 16px;
+    }
+    .profile-a{
+        font-size: 16px;
+    }
+
+    .about-me{
+        margin-top: 5px;
+    }
+
+    #about-me{
+        margin-top: 10px;
+        margin-right: 55px;
+        text-align: justify;
+  text-justify: inter-word;
     }
 
 }
