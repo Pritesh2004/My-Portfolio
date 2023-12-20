@@ -1,0 +1,88 @@
+<div class="boostrap-wrapper" id="screen">
+
+    <div class="row">
+        <div class="col-lg-12">
+
+            <!--.......................NavBar.........................-->
+            <nav id="navbar">
+                <div class="navlink" [class.menuClass]="menuVariable">
+                    <p class="navlinks">HOME</p>
+                    <p class="navlinks">ABOUT</p>
+                    <p class="navlinks">SKILLS</p>
+                    <p class="navlinks">PROJECTS</p>
+                    <p class="navlinks">CONTACT</p>
+                </div>
+
+                <button (click)="openMenu()" id="menu-btn" mat-icon-button class="example-icon"
+                    aria-label="Example icon-button with menu icon">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </nav>
+
+            
+            <!--.......................Home.........................-->
+            <div class="row " id="home">
+                <div class="col-lg-12 h100">
+
+                    <div class="intro">
+                        <div id="name">
+                            <p id="home-name">Hello I'm </p>
+                            <p id="pritesh">Pritesh Patil</p>
+                        </div>
+                        <p id="home-title">I'm Full-Stack Web Developer</p>
+                        <button id="home-btn">Get in touch ↗</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!--.......................About.........................-->
+            <div class="row" id="about">
+                <div class="col-lg-12">
+
+
+
+                </div>
+            </div>
+
+
+
+            <!--.......................Copyright.........................-->
+            <div class="row h35">
+                <div class="col-lg-12 h100">
+                    <div id="bottom-nav" class="h35">
+                        <div id="icons-div">
+
+                            <div class="icons">
+                                <i class="icon fa fa-linkedin-square"></i>
+                            </div>
+
+                            <div class="icons">
+                                <i class="icon fa fa-instagram"></i>
+                            </div>
+
+                            <div class="icons">
+                                <i class="icon fa fa-github"></i>
+                            </div>
+
+                            <div class="icons">
+                                <i class="icon fa fa-envelope"></i>
+                            </div>
+
+                        </div>
+
+                        <div id="copyright">
+                            <p id="cpr-name">PRITESH PATIL</p>
+                            <p id="cpr-date">©2023</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

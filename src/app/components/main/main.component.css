@@ -1,0 +1,246 @@
+#screen {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 235vh;
+    position: relative;
+    margin: 0;
+
+
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(0, 39, 39);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 3px #00adad;
+}
+
+.navlinks {
+    margin-left: 40px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.navlink {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    justify-content: center;
+    place-items: center;
+    height: 100%;
+    margin-top: 8px;
+}
+
+.navlinks:hover {
+    color: orangered;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#menu-btn {
+    position: absolute;
+    right: 1%;
+    top: 3%;
+    display: none;
+
+}
+
+#home {
+    height: 100vh;
+    background-color: white;
+    padding-top: 50px;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    height: 100%;
+}
+
+#name {
+    display: flex;
+    flex-direction: row;
+}
+
+#pritesh {
+    font-size: 44px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 12px;
+    color: #ff4500;
+}
+
+#home-name {
+    font-size: 44px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home-title {
+    padding-top: 20px;
+    font-size: 44px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#home-btn {
+    margin-top: 20px;
+    height: 45px;
+    width: 180px;
+    text-align: center;
+    font-size: 22px;
+    background-color: transparent;
+    border: solid 2px teal;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home-btn:hover {
+    background-color: teal;
+    color: white;
+    transition: 0.3s ease-out;
+}
+
+#about {
+    height: 100vh;
+    background-color: white;
+}
+
+#bottom-nav {
+
+    height: 35vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-top: solid 2px #00adad;
+}
+
+#icons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    margin-right: 30px;
+
+}
+
+.icons {
+    margin-left: 30px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #1c5353;
+    text-align: center;
+    color: white;
+
+}
+
+.icon {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.icons:hover {
+    background-color: rgb(0, 235, 235);
+    color: white;
+    transition: 0.3s ease-in-out;
+
+}
+
+#copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    position: absolute;
+    bottom: 50px;
+}
+
+#cpr-name {
+    font-size: 17px;
+    color: gray;
+}
+
+#cpr-date {
+    font-size: 17px;
+    margin-left: 5px;
+    color: orangered;
+}
+
+
+@media screen and (max-width: 480px) {
+    .navlink {
+        background-color: #1c5353;
+        position: fixed;
+        right: -100%;
+        top: 46px;
+        height: 25%;
+        width: 100%;
+        border-top: solid 2px teal;
+        display: flex;
+        flex-direction: column;
+        padding-top: 4%;
+        justify-content: space-between;
+        place-items: flex-start;
+        padding-bottom: 3%;
+        transition: 0.4s ease-in-out;
+    }
+
+    .menuClass {
+        transition: 0.4s ease-in-out;
+        right: 0;
+    }
+
+    #menu-btn {
+        display: block;
+        position: absolute;
+        top: 0.4%;
+    }
+
+    #home-name {
+        font-size: 28px;
+    }
+
+    #pritesh {
+        font-size: 32px;
+
+    }
+
+    #home-title {
+        font-size: 24px;
+        position: absolute;
+        top: 320px;
+
+    }
+
+    #home-btn {
+        height: 34px;
+        position: absolute;
+        top: 360px;
+    }
+
+    #icons-div {
+        margin-top: 60px;
+        margin-right: 30px;
+    }
+
+    #copyright {
+        position: absolute;
+        bottom: 40px;
+    }
+
+}
