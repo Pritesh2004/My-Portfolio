@@ -13,6 +13,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { MainComponent } from './components/main/main.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {MatInputModule} from '@angular/material/input';
+
 
 
 
@@ -24,6 +26,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   ],
   imports: [
     MatToolbarModule,
+    MatInputModule,
     MatIconModule,
     MatCardModule,
     MatProgressBarModule,
