@@ -1,6 +1,7 @@
 #screen {
     height: 125vh;
-    background-color: white;
+    background-image: url(./../../../assets/artiom-vallat-h9m8Xsy-n0Q-unsplash.jpg);
+    background-size: cover;
     margin: 0;
     overflow-x: hidden;
 }
@@ -28,13 +29,15 @@
     }
 }
 
+
+
 .page-title {
     font-size: 34px;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 30px;
     padding-left: 30px;
-    color: black;
+    color: white;
 }
 
 .contact-info-div {
@@ -47,7 +50,7 @@
 
 .contact-info {
     height: 105px;
-    background: white;
+    background-color: rgba(0,0,0,0.4);
     margin-top: 15px;
     /* margin-left: 15px;
     margin-right: 8px; */
@@ -86,7 +89,7 @@
     font-size: 22px;
     margin-left: 20px;
     font-weight: bold;
-    color: orangered;
+    color: white;
     margin-top: 9px;
     margin-bottom: 0;
 }
@@ -95,6 +98,7 @@
     margin-left: 20px;
   font-weight: lighter;
   margin-top: 6px;
+  color: white;
   
 }
 
@@ -113,6 +117,7 @@
 
 .social-icon{
 font-size: 30px;
+color: white;
 
 }
 
@@ -146,9 +151,9 @@ font-size: 30px;
 
 #message-div {
     margin: 30px;
-    background: white;
+    background-color: rgba(0,0,0,0.4);
 
-    height: 69vh;
+    height: 71vh;
     display: flex;
     flex-direction: column;
 }
@@ -160,13 +165,17 @@ font-size: 30px;
 }
 
 #subject {
+    margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
 }
 
 #message {
+    margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
+    background-color: rgba(0,0,0,0.4);
+
 }
 
 #btn {
@@ -180,6 +189,12 @@ font-size: 30px;
 
 .name-email {
     width: 49%;
+    height: 58px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 16px;
+    border: 2px solid teal;
+    padding-left: 20px;
 
 }
 
@@ -189,10 +204,22 @@ font-size: 30px;
 
 .subject {
     width: 100%;
+    height: 58px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 16px;
+    border: 2px solid teal;
+    padding-left: 20px;
 }
 
 .message {
     width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 19px;
+    border: 2px solid teal;
+    padding-left: 20px;
+    padding-top: 15px;
 
 }
 
@@ -202,6 +229,7 @@ font-size: 30px;
 }
 
 #sub-btn {
+    margin-top: 30px;
     height: 100%;
     width: 200px;
     background-color: teal;

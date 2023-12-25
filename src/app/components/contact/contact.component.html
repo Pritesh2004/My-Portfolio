@@ -73,26 +73,15 @@
         <div id="message-div">
             <form action="">
                 <div id="name-email">
-                    <mat-form-field appearance="outline" class="name-email">
-                        <mat-label>Your Name</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field appearance="outline" class="name-email email">
-                        <mat-label>Your Email</mat-label>
-                        <input matInput>
-                    </mat-form-field>
+                    <input type="text" name="name" placeholder="Your Name" class="name-email">
+                    <input type="email" name="email" placeholder="Your Email" class="name-email email">
                 </div>
+
                 <div id="subject">
-                    <mat-form-field appearance="outline" class="subject">
-                        <mat-label>Subject</mat-label>
-                        <input matInput>
-                    </mat-form-field>
+                    <input type="text" name="subject" placeholder="Subject" class="subject">
                 </div>
                 <div id="message">
-                    <mat-form-field appearance="outline" class="message">
-                        <mat-label>Message</mat-label>
-                        <textarea matInput placeholder="Ex. 100 Main St"></textarea>
-                    </mat-form-field>
+                    <textarea name="message"  cols="30" rows="8" placeholder="Message" class="message"></textarea>
                 </div>
                 <div id="btn">
                     <button id="sub-btn">Send Message</button>
