@@ -1,0 +1,21 @@
+<!--.......................NavBar.........................-->
+<nav id="navbar">
+    <div id="name-div">
+        <p id="name">PRITESH PATIL</p>
+    </div>
+   
+    <div class="navlink" [class.menuClass]="menuVariable">
+        
+            <p routerLink="/" class="navlinks">HOME</p>
+            <p routerLink="/about" class="navlinks">ABOUT</p>
+            <p routerLink="/resume" class="navlinks">RESUME</p>
+            <p routerLink="/contact" class="navlinks">CONTACT</p>
+        
+
+    </div>
+
+    <button (click)="openMenu()" id="menu-btn" mat-icon-button class="example-icon"
+        aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+</nav>

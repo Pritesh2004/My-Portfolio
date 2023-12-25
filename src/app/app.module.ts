@@ -14,6 +14,12 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { MainComponent } from './components/main/main.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatInputModule} from '@angular/material/input';
+import { PracticeComponent } from './components/practice/practice.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './components/about/about.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 
@@ -22,7 +28,13 @@ import {MatInputModule} from '@angular/material/input';
   declarations: [
     AppComponent,
     HomeComponent,
-    MainComponent
+    MainComponent,
+    PracticeComponent,
+    NavbarComponent,
+    FooterComponent,
+    AboutComponent,
+    ResumeComponent,
+    ContactComponent
   ],
   imports: [
     MatToolbarModule,
