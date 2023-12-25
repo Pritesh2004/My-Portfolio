@@ -102,6 +102,7 @@
         place-items: flex-start;
         transition: 0.4s ease-in-out;
         padding-top: 20px;
+        background-color: #1c5353;
     }
 
     #name{
@@ -114,7 +115,7 @@
 
   
     .navlinks{
-        color:#022449;
+        color:white;
     }
 
     .menuClass {
