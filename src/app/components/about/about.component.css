@@ -1,35 +1,49 @@
 #screen {
-    min-height: 500vh;
+    min-height: 100vh;
     background-color: white;
     margin: 0;
-    overflow-x: hidden;
 }
 
 #about {
-    height: 500vh;
+    min-height: 110vh;
     width: 84%;
     margin-top: 100px;
     margin-left: 8%;
     margin-right: 8%;
     margin-bottom: 35px;
     background-color: whitesmoke;
+    padding-bottom: 80px;
+    padding-top: 40px;
 
 }
 
+
+.page-title-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .page-title {
-    font-size: 35px;
-    font-weight: bolder;
-    padding-top: 30px;
-    padding-left: 30px;
-    color: black;
-    letter-spacing: -2px;
+    font-size: 45px;
+    font-weight: lighter;
+    color: rgb(67, 67, 67);
+    letter-spacing: .5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title-hr {
+    margin-top: 10px;
+    height: 3.8px;
+    background-color: teal;
+    width: 60px;
 }
 
 #about-div {
     display: flex;
     flex-direction: row;
     padding: 30px;
+    margin-top: 10px;
 }
 
 #profile-img {
@@ -204,6 +218,9 @@
     .page-title {
         font-size: 30px;
     }
+    .title-hr {
+        margin-top: 0;
+    }
 
 }
 
@@ -258,7 +275,7 @@
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .extra-cards {
@@ -276,7 +293,7 @@
 }
 
 .icon-card {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -288,12 +305,12 @@
     transition: 0.5s;
 }
 
-.icon-card:hover{
+.icon-card:hover {
     cursor: pointer;
     background-color: orangered;
-    transition: 0.5 ease-out;
+    transition: all 1s;
     scale: 1.3;
-    
+
 }
 
 .extra-icon {
@@ -313,16 +330,16 @@
 
 .extra-card-num {
     font-size: 45px;
-  margin-top: 40px;
-  font-weight: bold;
-  color: white;
+    margin-top: 40px;
+    font-weight: bold;
+    color: white;
 }
 
 .extra-card-name {
     font-size: 18px;
-  font-weight: lighter;
-  margin-top: 1px;
-  color: white;
+    font-weight: lighter;
+    margin-top: 1px;
+    color: white;
 }
 
 @media screen and (max-width:1020px) {
@@ -331,7 +348,7 @@
         width: 350px;
         margin-top: 10px;
     }
-    
+
 }
 
 
@@ -348,25 +365,25 @@
 
 @media screen and (max-width:800px) {
 
-    .extra-cards{
+    .extra-cards {
         width: 99.5%;
     }
 }
 
-#skills{
-    margin-top: 40px;
+#skills {
+    margin-top: 70px;
 }
 
-#skills-div{
+#skills-div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding-right: 20px;
-    padding-top: 10px;
+    margin-top: 30px;
 }
 
-.skills-card{
+.skills-card {
     width: 230px;
     height: 230px;
     background-color: rgb(0, 39, 39);
@@ -376,11 +393,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.skills-card:hover{
-    transition: 0.5s;
+.skills-card:hover {
+    transition: all 1s;
     transform: scale(1.1);
     background-color: transparent;
 }
@@ -404,25 +421,25 @@
 
 } */
 
-.skills-card:hover .skills-icon{
+.skills-card:hover .skills-icon {
     transform: scale(1.6);
-    transition: 0.5s;
+    transition: all 1s;
     cursor: pointer;
 
-  
+
 }
 
-.skills-card:hover .skill-name{
+.skills-card:hover .skill-name {
     opacity: 0;
 }
 
 
-.skills-icon{
-height:35%;
-margin-top: 60px;
+.skills-icon {
+    height: 35%;
+    margin-top: 60px;
 }
 
-.skill-name{
+.skill-name {
     font-size: 20px;
     font-weight: bold;
     margin-top: 15px;
@@ -430,30 +447,137 @@ margin-top: 60px;
 }
 
 @media screen and (max-width:1010px) {
-    .skills-card{
+    .skills-card {
         width: 200px;
         height: 200px;
     }
 }
 
 @media screen and (max-width:500px) {
-    .skills-card{
+    .skills-card {
         width: 140px;
         height: 140px;
         margin-top: 15px;
         margin-left: 15px;
     }
-    .skills-icon{
+
+    .skills-icon {
         margin-top: 30px;
     }
 
-    #skills-div{
+    #skills-div {
         padding-right: 10px;
     }
-    .skill-name{
+
+    .skill-name {
         font-size: 14px;
         text-wrap: wrap;
         margin-top: 20px;
     }
 
+}
+
+#projects {
+    margin-top: 70px;
+}
+
+#project-card-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-right: 30px;
+
+}
+
+.project-cards {
+    margin-top: 10px;
+    width: 390px;
+    height: 340px;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.project-cards:hover .project-img {
+    scale: 1.2;
+    transition: all 1s;
+}
+
+.project-img-div {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: all 1s;
+}
+
+.project-info {
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 7%;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.project-name-div {
+    width: 85%;
+}
+
+.project-name {
+    font-size: 18px;
+    color: gray;
+}
+
+.project-date {
+    font-size: 16px;
+    color: teal;
+    font-weight: lighter;
+}
+
+.project-icon-div {
+    width: 40px;
+    height: 40px;
+    border: 2px solid teal;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project-icon {
+    font-size: 24px;
+    color: teal;
+    font-weight: lighter;
+}
+
+@media screen and (max-width:1036px) {
+    .project-cards {
+        
+        width: 330px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:895px) {
+    #project-card-div {
+        justify-content: center;
+    }
+    .project-cards {
+        
+        width: 400px;
+        height: 350px;
+    }
 }
