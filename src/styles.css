@@ -9,10 +9,11 @@ html, body {
 
 body {
     font-family: var(--bs-body-font-family);
-    color: #444444;
+    color:#304656;
     margin:0;
     padding: 0;
     overflow-x: hidden;
+    background-color: whitesmoke;
     }
 
 .h100{

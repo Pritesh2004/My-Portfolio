@@ -30,7 +30,7 @@ export class HomeComponent {
       .rest(1500)
       .changeOps({ deleteSpeed: 80 })
       .remove(21)
-      .type('Full-Stact Developer')
+      .type('Full-Stack Developer')
       .rest(1550)
       .clear()
       .start()
