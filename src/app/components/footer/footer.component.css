@@ -2,11 +2,12 @@ footer{
     margin: 0;
 }
 #bottom-nav {
-    background-color: rgb(0, 39, 39);
+    background-color: #18222b;
     height: 22vh;
    
-    border-top: solid 2px turquoise;
+    border-top: solid 0.1px rgb(21, 32, 32);
     margin-top: auto;
+    box-shadow:0 0 25px #304656;
     
 }
 
@@ -26,7 +27,7 @@ footer{
     border-radius: 5px;
     text-align: center;
     color: white;
-    background-color:#1c5353;
+    background-color:#304656;
 
 
 }

@@ -8,7 +8,7 @@ html, body {
 *,*::before,*::after{ box-sizing: border-box;}
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--bs-body-font-family);
     color: #444444;
     margin:0;
     padding: 0;
