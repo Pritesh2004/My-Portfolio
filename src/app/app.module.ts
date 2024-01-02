@@ -20,6 +20,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ContactComponent } from './components/contact/contact.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -38,9 +42,13 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     MatToolbarModule,
+    HttpClientModule,
     MatInputModule,
+    FormsModule,
     MatIconModule,
+    MatTooltipModule,
     MatCardModule,
+    MatDialogModule,
     MatProgressBarModule,
     MatButtonModule,
     BrowserModule,

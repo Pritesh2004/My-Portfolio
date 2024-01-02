@@ -1,4 +1,5 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 // @ts-ignore
 import Typewriter from 't-writer.js';
 
@@ -8,9 +9,11 @@ import Typewriter from 't-writer.js';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent  implements OnInit{
 
   ngOnInit():void{
+
+    
 
     const target = document.querySelector('.tw');
 
@@ -37,5 +40,7 @@ export class HomeComponent {
           
     
   }
+
+ 
 
 }

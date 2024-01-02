@@ -5,16 +5,16 @@
         <!-- ........................About....................... -->
 
         <div>
-            <div class="page-title-div">
-               <h2 class="page-title">
-                ABOUT ME
-               </h2> 
-               <div class="title-hr">
+            <div class="page-title-div" data-aos="fade-up">
+                <h2 class="page-title">
+                    ABOUT ME
+                </h2>
+                <div class="title-hr">
 
-               </div>
+                </div>
             </div>
 
-            <div id="about-div">
+            <div id="about-div" data-aos="fade-up" data-aos-delay="800">
                 <img id="profile-img" src="./../../../assets/Pritesh Profile.jpg" alt="Pritesh">
                 <div id="about-info">
 
@@ -89,13 +89,13 @@
             </div>
 
 
-            <div id="extra-info-div">
+            <div id="extra-info-div" data-aos="fade-up" data-aos-delay="1000">
                 <div class="extra-cards">
                     <div class="blank-card">
 
                     </div>
                     <div class="extra-logo">
-                        <div class="icon-card">
+                        <div class="icon-card" (click)="openDialog()">
                             <i class="fa fa-file-text-o extra-icon" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                     </div>
 
                     <div class="extra-logo">
-                        <div class="icon-card">
+                        <div class="icon-card" (click)="openDialog()">
                             <i class="fa fa-book extra-icon" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="extra-logo">
 
-                        <div class="icon-card">
+                        <div class="icon-card" (click)="openDialog()">
                             <i class="fa fa-certificate extra-icon" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
 
                     </div>
                     <div class="extra-logo">
-                        <div class="icon-card">
+                        <div class="icon-card" (click)="openDialog()">
                             <i class="fa fa-tasks extra-icon" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -159,59 +159,67 @@
         <!-- ..........................SKILLS SECTION......................... -->
         <div id="skills">
 
-            <div class="page-title-div">
+            <div class="page-title-div" data-aos="fade-up"  data-aos-delay="500">
+                >
                 <h2 class="page-title">
-                 MY SKILLS 
-                </h2> 
+                    MY SKILLS
+                </h2>
                 <div class="title-hr">
-                 
+
                 </div>
-             </div>
+            </div>
 
             <div id="skills-div">
-                <div class="skills-card">
 
-
-                    <!-- <div class="skill-hover">
-                        <p class="hover">hello</p>
-                    </div> -->
-
+                <div class="skills-card" data-aos="fade-up"  data-aos-delay="100"
+                >
                     <img src="./../../../assets/java icon.png" alt="logo" class="skills-icon">
                     <p class="skill-name">Java</p>
                 </div>
-                <div class="skills-card">
+
+                <div class="skills-card" data-aos="fade-up"  data-aos-delay="300"
+                >
                     <img src="./../../../assets/spring icon.png" alt="logo" class="skills-icon">
                     <p class="skill-name">Spring Framework</p>
                 </div>
-                <div class="skills-card">
+
+                <div class="skills-card" data-aos="fade-up"     data-aos-delay="500"
+                >
                     <img src="./../../../assets/spring boot.Default" alt="logo" class="skills-icon">
                     <p class="skill-name">Spring Boot</p>
                 </div>
-                <div class="skills-card">
+
+                <div class="skills-card" data-aos="fade-up"  data-aos-delay="700">
                     <img src="./../../../assets/angular icon.png" alt="logo" class="skills-icon">
                     <p class="skill-name">Angular Js</p>
                 </div>
-                <div class="skills-card">
+
+                <div class="skills-card" data-aos="fade-up"  data-aos-delay="900">
                     <img src="./../../../assets/html.png" alt="logo" class="skills-icon">
                     <p class="skill-name">Html</p>
                 </div>
-                <div class="skills-card">
+
+                <div class="skills-card" data-aos="fade-up" data-aos-delay="100">
                     <img src="./../../../assets/css.png" alt="logo" class="skills-icon">
                     <p class="skill-name">Css</p>
                 </div>
-                <div class="skills-card">
+
+                <div class="skills-card" data-aos="fade-up" data-aos-delay="300">
                     <img src="./../../../assets/js icon.png" alt="logo" class="skills-icon">
                     <p class="skill-name">JavaScript</p>
                 </div>
-                <div class="skills-card">
+
+                <div class="skills-card" data-aos="fade-up" data-aos-delay="500">
                     <img src="./../../../assets/ds icon.png" alt="logo" class="skills-icon">
                     <p class="skill-name">Data Structures</p>
                 </div>
-                <div class="skills-card">
+
+                <div class="skills-card" data-aos="fade-up"  data-aos-delay="700">
                     <img src="./../../../assets/git icon.png" alt="logo" class="skills-icon">
                     <p class="skill-name">Git source control</p>
                 </div>
-                <div class="skills-card">
+
+                <div class="skills-card" data-aos="fade-up"  data-aos-delay="900">
                     <img src="./../../../assets/mysql icon.png" alt="logo" class="skills-icon">
                     <p class="skill-name">MySql Workbench</p>
                 </div>
@@ -221,22 +229,22 @@
 
         </div>
 
-        <!-- ........................My Contacts..................... -->
+        <!-- ........................My Projects..................... -->
 
         <div id="projects">
-            <div class="page-title-div">
+            <div class="page-title-div" data-aos="fade-up" data-aos-offset="100">
                 <h2 class="page-title">
-                 MY PROJECTS 
-                </h2> 
+                    MY PROJECTS
+                </h2>
                 <div class="title-hr">
-                 
-                </div>
-             </div>
 
-            <div id="project-card-div">
+                </div>
+            </div>
+
+            <div id="project-card-div" data-aos="fade-up" data-aos-offset="100">
                 <div class="project-cards">
                     <div class="project-img-div">
-                        <img class="project-img" src="./../../../assets/bg.jpg" alt="">
+                        <img class="project-img" src="./../../../assets/health care 1.png" alt="">
                     </div>
                     <div class="project-info">
                         <div class="project-name-div">
@@ -247,50 +255,51 @@
                                 7/12/2023
                             </p>
                         </div>
-                        <div class="project-icon-div">
+                        <div class="project-icon-div" matTooltip="Click for project details">
                             <i class="fa fa-expand project-icon " aria-hidden="true"></i>
                         </div>
 
                     </div>
                 </div>
+
                 <div class="project-cards">
                     <div class="project-img-div">
-                        <img class="project-img" src="./../../../assets/bg.jpg" alt="">
+                        <img class="project-img" src="./../../../assets//portfolio 1.png" alt="">
                     </div>
                     <div class="project-info">
                         <div class="project-name-div">
                             <p class="project-name">
-                                Doctor appointment booking system
+                                My Personal Portfolio
                             </p>
                             <p class="project-date">
                                 7/12/2023
                             </p>
                         </div>
-                        <div class="project-icon-div">
+                        <div class="project-icon-div" matTooltip="Click for project details">
                             <i class="fa fa-expand project-icon " aria-hidden="true"></i>
                         </div>
 
                     </div>
                 </div>
-                <div class="project-cards">
-                    <div class="project-img-div">
-                        <img class="project-img" src="./../../../assets/bg.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <div class="project-name-div">
-                            <p class="project-name">
-                                Doctor appointment booking system
-                            </p>
-                            <p class="project-date">
-                                7/12/2023
-                            </p>
-                        </div>
-                        <div class="project-icon-div">
-                            <i class="fa fa-expand project-icon " aria-hidden="true"></i>
-                        </div>
+            </div>
+        </div>
 
-                    </div>
+        <!-- .......................resume......................... -->
+
+        <div id="resume">
+
+            <div class="page-title-div" data-aos="fade-up" data-aos-offset="100">
+                <h2 class="page-title">
+                    MY Resume
+                </h2>
+                <div class="title-hr">
                 </div>
+            </div>
+
+            <div id="resume-content">
+                <p id="resume-info" data-aos="fade-up" data-aos-offset="100">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum
+                    consequuntur placeat mollitia dolore esse exercitationem distinctio, error at pariatur!</p>
+                <button id="resume-btn" data-aos="fade-up" data-aos-offset="100">Download Resume</button>
             </div>
         </div>
 

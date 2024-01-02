@@ -1,15 +1,15 @@
 <app-navbar></app-navbar>
 
 <div id="screen">
-    <div id="contact">
+    <div id="contact" >
 
-        <div class="page-title-div">
+        <div class="page-title-div" data-aos="fade-up">
             <p class="page-title">MY CONTACTS</p>
             <div class="title-hr"></div>
         </div>
 
 
-        <div class="contact-info-div">
+        <div class="contact-info-div" data-aos="fade-up" data-aos-delay="800">
             <div class="contact-info">
                 <div class="contact-data">
                     <div class="contact-logo">
@@ -45,7 +45,7 @@
 
             </div>
         </div>
-        <div class="contact-info-div">
+        <div class="contact-info-div" data-aos="fade-up" data-aos-delay="800">
             <div class="contact-info">
                 <div class="contact-data">
                     <div class="contact-logo">
@@ -71,21 +71,24 @@
         </div>
 
 
-        <div id="message-div">
-            <form action="">
+        <div id="message-div" data-aos="fade-up"  data-aos-delay="1000" >
+            <div id="sub-heading-div">
+                <h2 id="sub-heading">How can i help you?</h2>
+            </div>
+            <form #mailForm="ngForm" (ngSubmit)="sendEmail()">
                 <div id="name-email">
-                    <input type="text" name="name" placeholder="Your Name" class="name-email">
-                    <input type="email" name="email" placeholder="Your Email" class="name-email email">
+                    <input  [(ngModel)]="mail.name" type="text" name="name" placeholder="Your Name" class="name-email">
+                    <input [(ngModel)]="mail.email" type="email" name="email" placeholder="Your Email" class="name-email email">
                 </div>
 
                 <div id="subject">
-                    <input type="text" name="subject" placeholder="Subject" class="subject">
+                    <input [(ngModel)]="mail.subject" type="text" name="subject" placeholder="Subject" class="subject">
                 </div>
                 <div id="message">
-                    <textarea name="message" cols="30" rows="8" placeholder="Message" class="message"></textarea>
+                    <textarea [(ngModel)]="mail.message" name="message" cols="30" rows="8" placeholder="Message" class="message"></textarea>
                 </div>
                 <div id="btn">
-                    <button id="sub-btn">Send Message</button>
+                    <button id="sub-btn" >Send Message</button>
                 </div>
 
             </form>

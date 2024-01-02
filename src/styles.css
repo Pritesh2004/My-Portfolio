@@ -2,7 +2,6 @@
 
 html, body { 
     height: 100%;   box-sizing: border-box; 
-    overflow-x: hidden;
 }
 
 *,*::before,*::after{ box-sizing: border-box;}
@@ -12,7 +11,6 @@ body {
     color:#304656;
     margin:0;
     padding: 0;
-    overflow-x: hidden;
     background-color: whitesmoke;
     }
 

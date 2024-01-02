@@ -14,7 +14,7 @@
     margin-left: 8%;
     margin-bottom: 35px;
     padding-top: 1px;
-    padding-bottom: 5px;
+    padding-bottom: 45px;
 }
 
 
@@ -62,9 +62,18 @@
     height: 105px;
     background-color: white;
     margin-top: 15px;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
     border-radius: .5%;
     width: 49%;
+    position: relative;
+    top: 0;
+}
+
+.contact-info:hover{
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
 }
 
 .contact-data {
@@ -159,19 +168,27 @@ color: #304656;
 
 
 #message-div {
-    margin: 30px;
-    background-color:white;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
     height:80vh;
     display: flex;
     flex-direction: column;
     padding: 20px;
+
+}
+
+#sub-heading-div{
+margin-left: 27px;
+}
+
+#sub-heading{
+    font-size: 32px;
 }
 
 #name-email {
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 30px;
+    
 }
 
 #subject {
@@ -203,13 +220,18 @@ color: #304656;
     height: 58px;
     color: #304656;
     font-size: 16px;
-    border: 0.5px solid #304656;
+    border: 0.5px solid white;
     padding-left: 20px;
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+
+
 
 }
 
 .email {
     margin-left: 2%;
+
 }
 
 .subject {
@@ -217,17 +239,21 @@ color: #304656;
     height: 58px;
     color: #304656;
     font-size: 16px;
-    border: 0.5px solid #304656;
+    border: 0.5px solid white;
     padding-left: 20px;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+
 }
 
 .message {
     width: 100%;
     color: #304656;
     font-size: 19px;
-    border: 0.5px solid #304656;
+    border: 0.5px solid white;
     padding-left: 20px;
     padding-top: 15px;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+
 
 }
 

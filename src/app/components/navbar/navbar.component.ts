@@ -14,4 +14,6 @@ export class NavbarComponent {
     this.menuVariable =! this.menuVariable;
   }
 
+  
+
 }
