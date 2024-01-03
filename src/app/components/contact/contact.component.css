@@ -282,6 +282,14 @@ margin-left: 27px;
 
 
 @media screen and (max-width:801px) {
+
+    .name-email {
+        margin-top: 20px;
+    }
+
+    #message-div {
+        padding: 0;
+    }
     #screen {
         height: 160vh;
     }
@@ -357,9 +365,6 @@ margin-left: 27px;
         margin-left: 8px;
     }
 
-    #message-div {
-        margin: 12px;
-        
-    }
+    
 
 }

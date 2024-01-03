@@ -12,7 +12,7 @@ export class EmailServiceService {
 
   sendEmail(mail:any): Observable<any> {
    
-    return this.http.post('http://localhost:8080/email', mail);
+    return this.http.post('https://pritesh-email-service-production.up.railway.app/email', mail);
   }
 
 }
