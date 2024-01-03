@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { MainComponent } from './components/main/main.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
@@ -15,11 +14,7 @@ const routes: Routes = [
   component: HomeComponent,
   pathMatch:"full",
 },
-{
-  path:'main',
-  component: MainComponent,
-  pathMatch:"full",
-},
+
 
 {
   path:'navbar',

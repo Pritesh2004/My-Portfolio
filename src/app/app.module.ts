@@ -11,7 +11,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-import { MainComponent } from './components/main/main.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatInputModule} from '@angular/material/input';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -31,7 +30,6 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
-    MainComponent,
     NavbarComponent,
     FooterComponent,
     AboutComponent,
