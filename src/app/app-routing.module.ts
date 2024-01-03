@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { MainComponent } from './components/main/main.component';
-import { PracticeComponent } from './components/practice/practice.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
@@ -21,11 +20,7 @@ const routes: Routes = [
   component: MainComponent,
   pathMatch:"full",
 },
-{
-  path:'practice',
-  component: PracticeComponent,
-  pathMatch:"full",
-},
+
 {
   path:'navbar',
   component: NavbarComponent,
