@@ -23,8 +23,261 @@ body {
     flex-direction: row;
 }
 
-.flew-col{
+.flex-col{
     display: flex;
     flex-direction: column;
+
 }
 
+
+
+#extra-info-div {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+}
+
+.extra-cards {
+    width: 23.5%;
+
+}
+
+.blank-card {}
+
+.extra-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -25px;
+    transition: 0.5s;
+}
+
+.icon-card:hover {
+    cursor: pointer;
+    transition: all 1s;
+    scale: 1.2;
+
+}
+
+.extra-icon {
+    font-size: 25px;
+    color: rgb(0, 244, 244);
+}
+
+.info-card {
+    background-color: #18222b;
+    border-radius: 1%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra-card-num {
+    font-size: 45px;
+    margin-top: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.extra-card-name {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 1px;
+    color: white;
+}
+
+@media screen and (max-width:1020px) {
+
+    .extra-cards {
+        width: 350px;
+        margin-top: 10px;
+    }
+
+}
+
+
+@media screen and (max-width:910px) {
+
+    #extra-info-div {
+        margin-top: 30px;
+    }
+
+    .extra-cards {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .extra-cards {
+        width: 99.5%;
+    }
+}
+
+
+#projects {
+    margin-top: 110px;
+}
+
+#project-card-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-right: 30px;
+
+}
+
+.project-cards {
+    margin-top: 10px;
+    width: 390px;
+    height: 340px;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.project-cards:hover .project-img {
+    scale: 1.2;
+    transition: all 1s;
+}
+
+.project-img-div {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: all 1s;
+}
+
+.project-info {
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 7%;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.project-name-div {
+    width: 85%;
+}
+
+.project-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #304656;
+}
+
+.project-date {
+    font-size: 16px;
+    color: teal;
+    font-weight: 400;
+}
+
+.project-icon-div {
+    width: 40px;
+    height: 40px;
+    border: 2px solid teal;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project-icon {
+    font-size: 24px;
+    color: teal;
+    font-weight: lighter;
+}
+
+@media screen and (max-width:1036px) {
+    .project-cards {
+        
+        width: 330px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:895px) {
+    #project-card-div {
+        justify-content: center;
+    }
+    .project-cards {
+        
+        width: 400px;
+        height: 350px;
+    }
+}
+
+
+
+#resume{
+    margin-top: 110px;
+
+}
+
+#resume-content{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#resume-info{
+width: 80%;
+text-align: center;
+font-size: 20px;
+
+}
+
+#resume-btn{
+margin-top: 60px;
+    height: 50px;
+    width: 230px;
+    text-align: center;
+    font-size: 21px;
+    background-color: teal;
+    border: solid 2px teal;
+    font-weight: lighter;
+    
+    color: white;
+}
+
+#resume-btn:hover{
+    background-color: transparent;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
