@@ -11,7 +11,7 @@ body {
     color:#304656;
     margin:0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: #f5f8fd;
     }
 
 .h100{
@@ -43,7 +43,6 @@ body {
 
 .extra-cards {
     width: 23.5%;
-
 }
 
 .blank-card {}
@@ -56,6 +55,7 @@ body {
 }
 
 .icon-card {
+
     background-color: rgba(0, 0, 0, 0.6);
     height: 50px;
     width: 50px;
@@ -81,6 +81,7 @@ body {
 }
 
 .info-card {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     background-color: #18222b;
     border-radius: 1%;
     height: 120px;
@@ -88,20 +89,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 32px;
 }
 
 .extra-card-num {
     font-size: 45px;
-    margin-top: 40px;
     font-weight: bold;
     color: white;
+    
 }
 
 .extra-card-name {
     font-size: 18px;
     font-weight: lighter;
-    margin-top: 1px;
     color: white;
+    padding-top: 3px;
 }
 
 @media screen and (max-width:1020px) {

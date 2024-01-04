@@ -15,7 +15,7 @@ export class AppComponent {
 
     AOS.init({
       startEvent: 'load',
-      offset:150,
+      offset:100,
       duration: 1300, // values from 0 to 3000, with step 50ms
       easing: 'ease', // default easing for AOS animations
       

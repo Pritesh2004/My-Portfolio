@@ -3,7 +3,7 @@
     background-size: cover;
     margin: 0;
     overflow-x: hidden;
-    background-color: whitesmoke;
+    background-color: #f5f8fd;
 }
 
 #contact {
@@ -84,7 +84,6 @@
 
 .contact-logo {
     width: 50px;
-    background-color: #304656;
     height: 50px;
     border-radius: 5%;
     display: flex;
@@ -92,6 +91,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    
+}
+
+.gif-icon{
+    height: 100%;
+    /* opacity: 0; */
 }
 
 .contact-icon {

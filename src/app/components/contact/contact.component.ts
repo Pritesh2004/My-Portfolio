@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { EmailServiceService } from 'src/app/email-service.service';
 import Swal from 'sweetalert2';
 
@@ -28,24 +28,27 @@ export class ContactComponent implements OnInit {
   constructor(private emailService: EmailServiceService, private router: Router) {}
 
   refreshPage() {
-    this.router.navigate([], {
-      queryParams: { reload: true },
-      queryParamsHandling: 'merge',
-    });
+    location.reload();
   }
 
+ 
 
   sendEmail() {
     this.emailService.sendEmail(this.mail).subscribe(
-      
+     
       (data) => {
         console.log('Email sent successfully:'+ data);
         console.log(this.mail);
+        
         Swal.fire({
           title: "Email Recieved",
           text: "Wait for my reply",
           icon: "success",
-          
+          confirmButtonText: 'OK',
+        }).then((result) => {
+          if (result.isConfirmed) {
+            this.refreshPage();
+          }
         });
       },
 
@@ -56,6 +59,5 @@ export class ContactComponent implements OnInit {
       }
       
     );
-    this.refreshPage();
   }
 }
