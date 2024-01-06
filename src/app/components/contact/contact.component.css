@@ -7,7 +7,7 @@
 }
 
 #contact {
-    min-height: 100vh;
+    min-height: 110vh;
     width: 84%;
     border-radius: 0.6%;
     margin-top: 100px;
@@ -157,6 +157,13 @@ color: #304656;
 }
 
 @media screen and (max-width:800px) {
+
+    #contact {
+   
+   padding-bottom: 100px;
+    }
+
+
     .contact-info-div {
         flex-direction: column;
     }
@@ -295,13 +302,7 @@ margin-left: 27px;
     #message-div {
         padding: 0;
     }
-    #screen {
-        height: 160vh;
-    }
-
-    #contact {
-        height: 160vh;
-    }
+  
 
     #name-email {
         display: flex;
@@ -326,13 +327,7 @@ margin-left: 27px;
 
 @media screen and (max-width:500px) {
 
-    #screen {
-        height: 140vh;
-    }
-
-    #contact {
-        height: 140vh;
-    }
+  
 
     .page-title {
         font-size: 28px;

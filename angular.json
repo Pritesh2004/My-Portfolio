@@ -22,7 +22,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/icon2.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/portfolio 1.png"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
