@@ -309,6 +309,16 @@ margin-left: 27px;
         flex-direction: column;
     }
 
+    #subject {
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+    #message{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .name-email {
         width: 100%;
 
@@ -327,8 +337,21 @@ margin-left: 27px;
 
 @media screen and (max-width:500px) {
 
+    #message-div {
+    
+        padding-left: 12px;
+        padding-right: 12px;
+    
+    }
   
+    #sub-heading-div{
+    margin-left: 0;
+    }
 
+    #name-email {
+    margin-left: 0;
+    margin-right: 0;
+    }
     .page-title {
         font-size: 28px;
         padding-left: 12px;

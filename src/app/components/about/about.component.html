@@ -95,7 +95,7 @@
 
                     </div>
                     <div class="extra-logo">
-                        <div class="icon-card" (click)="openDialog()">
+                        <div class="icon-card" (click)="openExperienceDialog()">
                             <i class="fa fa-file-text-o extra-icon" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                     </div>
 
                     <div class="extra-logo">
-                        <div class="icon-card" (click)="openDialog()">
+                        <div class="icon-card" (click)="openEducationDialog()">
                             <i class="fa fa-book extra-icon" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="extra-logo">
 
-                        <div class="icon-card" (click)="openDialog()">
+                        <div class="icon-card" (click)="openCertificateDialog()">
                             <i class="fa fa-certificate extra-icon" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
 
                     </div>
                     <div class="extra-logo">
-                        <div class="icon-card" (click)="openDialog()">
+                        <div class="icon-card" (click)="openProjectDialog()">
                             <i class="fa fa-tasks extra-icon" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -255,7 +255,7 @@
                                 7/12/2023
                             </p>
                         </div>
-                        <div class="project-icon-div" matTooltip="Click for project details">
+                        <div (click)="openProject1Dialog()" class="project-icon-div" matTooltip="Click for project details">
                             <i class="fa fa-expand project-icon " aria-hidden="true"></i>
                         </div>
 
@@ -264,7 +264,7 @@
 
                 <div class="project-cards">
                     <div class="project-img-div">
-                        <img class="project-img" src="./../../../assets//portfolio 1.png" alt="">
+                        <img class="project-img" src="./../../../assets/portfolio-ss.png" alt="">
                     </div>
                     <div class="project-info">
                         <div class="project-name-div">
@@ -275,7 +275,7 @@
                                 7/12/2023
                             </p>
                         </div>
-                        <div class="project-icon-div" matTooltip="Click for project details">
+                        <div (click)="openProject2Dialog()" class="project-icon-div" matTooltip="Click for project details">
                             <i class="fa fa-expand project-icon " aria-hidden="true"></i>
                         </div>
 

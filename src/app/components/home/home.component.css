@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width:500px){
+
+    #name {
+    margin-top: 20px;
+    }
     #pritesh {
         font-size: 40px;
         margin-left: 10px;
