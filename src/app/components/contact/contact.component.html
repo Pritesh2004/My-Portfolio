@@ -81,15 +81,15 @@
             </div>
             <form #mailForm="ngForm" (ngSubmit)="sendEmail()">
                 <div id="name-email">
-                    <input  [(ngModel)]="mail.name" type="text" name="name" placeholder="Your Name" class="name-email">
+                    <input required  [(ngModel)]="mail.name" type="text" name="name" placeholder="Your Name" class="name-email">
                     <input [(ngModel)]="mail.email" type="email" name="email" placeholder="Your Email" class="name-email email">
                 </div>
 
                 <div id="subject">
-                    <input [(ngModel)]="mail.subject" type="text" name="subject" placeholder="Subject" class="subject">
+                    <input required [(ngModel)]="mail.subject" type="text" name="subject" placeholder="Subject" class="subject">
                 </div>
                 <div id="message">
-                    <textarea [(ngModel)]="mail.message" name="message" cols="30" rows="8" placeholder="Message" class="message"></textarea>
+                    <textarea required [(ngModel)]="mail.message" name="message" cols="30" rows="8" placeholder="Message" class="message"></textarea>
                 </div>
                 <div id="btn">
                     <button id="sub-btn" >Send Message</button>

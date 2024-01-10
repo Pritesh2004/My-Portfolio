@@ -1,0 +1,15 @@
+.project-card{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+
+.project-img-div{
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.project-img{
+    height: 100%;
+}

@@ -57,6 +57,7 @@ export class AboutComponent  implements OnInit{
 @Component({
   selector: 'exp-dialog',
   templateUrl: 'exp-dialog.html',
+  styleUrls: ['./popUp-cards.css'],
   standalone: true,
   imports: [MatButtonModule]
 })
@@ -68,6 +69,7 @@ export class DialogForExperience {
 @Component({
   selector: 'edu-dialog',
   templateUrl: 'edu-dialog.html',
+  styleUrls: ['./popUp-cards.css'],
   standalone: true,
   imports: [MatButtonModule]
 })
@@ -79,6 +81,7 @@ export class DialogForEducation {
 @Component({
   selector: 'certificate-dialog',
   templateUrl: 'certificate-dialog.html',
+  styleUrls: ['./popUp-cards.css'],
   standalone: true,
   imports: [MatButtonModule]
 })
@@ -90,6 +93,7 @@ export class DialogForCertificate {
 @Component({
   selector: 'project-dialog',
   templateUrl: 'project-dialog.html',
+  styleUrls: ['./popUp-cards.css'],
   standalone: true,
   imports: [MatButtonModule]
 })
@@ -101,6 +105,7 @@ export class DialogForProject {
 @Component({
   selector: 'pro1-dialog',
   templateUrl: 'pro1-dialog.html',
+  styleUrls: ['./popUp-cards.css'],
   standalone: true,
   imports: [MatButtonModule]
 })
@@ -112,6 +117,7 @@ export class DialogForProject1 {
 @Component({
   selector: 'pro2-dialog',
   templateUrl: 'pro2-dialog.html',
+  styleUrls: ['./popUp-cards.css'],
   standalone: true,
   imports: [MatButtonModule]
 })
