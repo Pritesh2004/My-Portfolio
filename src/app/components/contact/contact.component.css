@@ -13,8 +13,10 @@
     margin-top: 100px;
     margin-left: 8%;
     margin-bottom: 35px;
-    padding-top: 1px;
+    padding-top: 50px;
     padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -32,22 +34,45 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: max-content;
 }
 
 .page-title {
     font-size: 45px;
     font-weight: 700;
-    color: #304656;
     letter-spacing: .5px;
+    margin-bottom: 12px;
+}
+
+.hr-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+width: 100%;
 }
 
 .title-hr {
-    margin-top: 20px;
-    height: 3.8px;
-    background-color: teal;
-    width: 60px;
+    height: 3.1px;
+    background-color: #18222b;
+    width: 64%;
+    
+}
+
+.sub-title{
+width: 40%;    color: teal;
+    font-weight: 550;
+    margin-bottom: 0;
+    margin-left: 10px;
+  font-size: 120%;}
+
+  .center-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info-div {
@@ -235,7 +260,7 @@ margin-left: 27px;
     border: 0.5px solid white;
     padding-left: 20px;
     background-color: white;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2); */
 
 
 
@@ -253,7 +278,7 @@ margin-left: 27px;
     font-size: 16px;
     border: 0.5px solid white;
     padding-left: 20px;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2); */
 
 }
 
@@ -264,7 +289,7 @@ margin-left: 27px;
     border: 0.5px solid white;
     padding-left: 20px;
     padding-top: 15px;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.05); */
 
 
 }
@@ -352,10 +377,7 @@ margin-left: 27px;
     margin-left: 0;
     margin-right: 0;
     }
-    .page-title {
-        font-size: 28px;
-        padding-left: 12px;
-    }
+   
 
     .contact-info-div {
         padding-left: 12px;

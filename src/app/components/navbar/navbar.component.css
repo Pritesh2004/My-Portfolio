@@ -16,7 +16,7 @@
 .navlinks {
     margin-left: 40px;
     font-size: 17px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
     color: white;
 }
 
@@ -92,7 +92,7 @@
     .navlink {
         position: fixed;
         right: -120%;
-        top: 64px;
+        top: 60px;
         height: 26%;
         width: 100%;
         display: flex;
@@ -100,7 +100,7 @@
         justify-content: space-evenly;
         place-items: flex-start;
         transition: 0.4s ease-in-out;
-        padding-top: 20px;
+        padding-top: 10px;
         background-color: rgba(0,0,0,0.8);
     }
 
