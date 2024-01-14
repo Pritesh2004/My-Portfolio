@@ -28,8 +28,7 @@ export class ContactComponent implements OnInit {
   constructor(private emailService: EmailServiceService, private router: Router) {}
 
   refreshPage() {
-    location.reload();
-  }
+    window.location.href="/contact"  }
 
  
 

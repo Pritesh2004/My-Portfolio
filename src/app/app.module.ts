@@ -16,12 +16,12 @@ import {MatInputModule} from '@angular/material/input';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
-import { ResumeComponent } from './components/resume/resume.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MyServicesComponent } from './components/my-services/my-services.component';
 
 
 
@@ -33,8 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     FooterComponent,
     AboutComponent,
-    ResumeComponent,
-    ContactComponent
+    ContactComponent,
+    MyServicesComponent
   ],
   imports: [
     MatToolbarModule,

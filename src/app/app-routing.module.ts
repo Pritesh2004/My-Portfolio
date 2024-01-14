@@ -5,7 +5,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { ResumeComponent } from './components/resume/resume.component';
+import { MyServicesComponent } from './components/my-services/my-services.component';
 
 const routes: Routes = [
 
@@ -37,8 +37,8 @@ const routes: Routes = [
   pathMatch:"full",
 },
 {
-  path:'resume',
-  component: ResumeComponent,
+  path:'service',
+  component: MyServicesComponent,
   pathMatch:"full",
 },
 
