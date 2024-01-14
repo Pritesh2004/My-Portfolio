@@ -8,7 +8,7 @@ import AOS from 'node_modules/aos';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css','./about2.css']
 })
 export class AboutComponent  implements OnInit{
   

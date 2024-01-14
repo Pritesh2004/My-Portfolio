@@ -13,10 +13,30 @@
     margin-right: 7%;
     margin-bottom: 35px;
     padding-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 
+#title-hr-service {
+    height: 3.1px;
+    background-color: #18222b;
+    width: 70% !important;
+
+}
+
+#title-hr-skills {
+    height: 3.1px;
+    background-color: #18222b;
+    width: 67% !important;
+
+}
+
+#title-hr-projects {
+    height: 3.1px;
+    background-color: #18222b;
+    width: 70% !important;
+
+}
 
 #services{
     padding-top: 100px;

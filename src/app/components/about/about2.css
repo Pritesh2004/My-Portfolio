@@ -1,0 +1,216 @@
+
+
+#education {
+    width: 84%;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 80px;
+}
+
+.education-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    max-height: max-content;
+
+}
+
+.education-date-div {
+    width: 25%;
+    padding-top: 25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.education-date {
+    padding-top: 20px;
+    font-size: 56px;
+    color: #18222b;
+    font-weight: bolder;
+    padding-right: 30px;
+    height: 60px;
+    border-right: 3px solid #18222b;
+}
+
+
+.education-info {
+    background-color: white;
+    width: 75%;
+    padding-left: 80px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+
+}
+
+.education-name {
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.school-name {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #18222b;
+}
+
+.education-discription {
+    margin-top: 30px;
+    font-size: 18px;
+    color: gray;
+    text-align: justify;
+}
+
+.education-card:hover .education-info {
+    background-color: #f5f8fd;
+}
+
+.education-card:hover .education-date {
+    color: teal;
+    scale: 1.1;
+    transition: all 0.4s ease;
+}
+
+@media screen and (max-width:1200px) {
+
+    .education-card {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .education-date-div {
+        width: 100%;
+        height: 10vh;
+        justify-content: flex-start;
+        border: 1px solid #18222b;
+        padding-left: 20px;
+        padding-top: 0;
+    }
+
+    .education-card:hover .education-date-div {
+        border: 1px solid teal;
+    }
+
+    .education-date {
+        font-size: 25px;
+        border-right: 0px;
+        height: auto;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+    .education-info {
+        width: 100%;
+        padding-left: 0px;
+        background-color: transparent;
+        padding-right: 0px;
+
+    }
+
+    .education-name {
+        line-height: 35px;
+
+    }
+
+}
+
+@media screen and (max-width:870px) {
+
+    .education-card {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width:570px) {
+
+    /* .education-info{
+    height: 35vh;
+    } */
+    .education-date-div {
+    height: 8vh;
+    }
+
+    .education-date {
+    font-size: 16px;
+    font-weight: 400;
+    }
+
+    .education-name {
+        line-height: 35px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .school-name {
+        margin-top: 25px;
+    }
+
+    .education-discription {
+
+        margin-top: 15px;
+    }
+}
+
+
+
+#resume {
+    margin-top: 110px;
+
+}
+
+#resume-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#resume-info {
+    width: 80%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+
+}
+
+#resume-btn {
+    margin-top: 40px;
+    height: 50px;
+    width: 220px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #18222b;
+    border: solid 1px #18222b;
+    font-weight: lighter;
+    color: white;
+    border-radius: 30px;
+}
+
+
+#resume-btn:hover {
+    background-color: transparent;
+    color: black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px){
+
+    #resume {
+    margin-top: 60px;
+
+}
+}
+

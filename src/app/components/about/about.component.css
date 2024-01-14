@@ -2,7 +2,7 @@
     min-height: 110vh;
     background-color: #f5f8fd;
     padding-top: 140px;
-    padding-bottom: 115px;
+    padding-bottom: 140px;
     margin: 0;
 }
 
@@ -13,6 +13,38 @@
     align-items: center;
 }
 
+#title-hr-about {
+    height: 3.1px;
+    background-color: #18222b;
+    width: 65% !important;
+
+}
+
+
+#title-hr-education {
+    height: 3.1px;
+    background-color: #18222b;
+    width: 67% !important;
+
+}
+
+#title-hr-resume {
+    height: 3.1px;
+    background-color: #18222b;
+    width: 60% !important;
+
+}
+
+@media screen and (max-width:500px) {
+
+    #title-hr-about {
+    width: 57% !important;
+    }
+
+    #title-hr-resume {
+    width: 52% !important;
+    }
+}
 
 #about-div {
     display: flex;
@@ -20,7 +52,10 @@
     width: 84%;
     margin-left: 8%;
     margin-right: 8%;
-    padding: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
     background-color: #f5f8fd;
     border-radius: .8%;
 }
@@ -214,7 +249,12 @@
     } */
 
     #about-div {
-        padding: 15px;
+        padding-top: 15px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #profile-img {
