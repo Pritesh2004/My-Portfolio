@@ -22,6 +22,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MyServicesComponent } from './components/my-services/my-services.component';
+import { ReactiveFormsModule } from '@angular/forms';  // Import ReactiveFormsModule
+
 
 
 
@@ -40,6 +42,7 @@ import { MyServicesComponent } from './components/my-services/my-services.compon
     MatToolbarModule,
     HttpClientModule,
     MatInputModule,
+    ReactiveFormsModule,
     FormsModule,
     MatIconModule,
     MatTooltipModule,

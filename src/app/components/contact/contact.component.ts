@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NavigationEnd, Router } from '@angular/router';
 import { EmailServiceService } from 'src/app/email-service.service';
 import Swal from 'sweetalert2';
@@ -11,34 +12,36 @@ import Swal from 'sweetalert2';
 export class ContactComponent implements OnInit {
 
 
-  
+
   ngOnInit(): void {
 
-  
+
   }
 
-  public mail = {
-    email: '',
-    subject: '',
-    message: '',
-    name: '',
+  mail: FormGroup;
 
-  };
 
-  constructor(private emailService: EmailServiceService, private router: Router) {}
+  constructor(private emailService: EmailServiceService, private router: Router, private fb: FormBuilder) {
+    this.mail = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      subject: ['', Validators.required],
+      message: ['', Validators.required],
+    });
+  }
 
   refreshPage() {
-    window.location.href="/contact"  }
-
- 
+    window.location.href = "/contact"
+  }
 
   sendEmail() {
-    this.emailService.sendEmail(this.mail).subscribe(
-     
+
+    this.emailService.sendEmail(this.mail.value).subscribe(
+
       (data) => {
-        console.log('Email sent successfully:'+ data);
+        console.log('Email sent successfully:' + data);
         console.log(this.mail);
-        
+
         Swal.fire({
           title: "Email Recieved",
           text: "Wait for my reply",
@@ -52,11 +55,18 @@ export class ContactComponent implements OnInit {
       },
 
       (error) => {
-        console.error('Error sending email:'+ error);
-      
-        
+        console.error('Error sending email:' + error);
+
+
       }
-      
+
     );
+
+
+
   }
+
+
+
+
 }

@@ -20,6 +20,11 @@ body {
     background-color: #f5f8fd;
 }
 
+::ng-deep .mdc-notched-outline  {
+    background-color: white !important;
+    
+  }
+
 .h100 {
     height: 100%;
 }

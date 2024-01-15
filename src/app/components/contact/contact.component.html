@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <div id="screen">
-    <div id="contact" >
+    <div id="contact">
         <div class="center-div">
             <div class="page-title-div" data-aos="fade-up" data-aos-delay="200">
                 <h2 class="page-title">
@@ -43,14 +43,14 @@
                                 <i class="fa fa-instagram social-icon" aria-hidden="true"></i>
                             </div>
                             <a href="https://www.linkedin.com/in/pritesh-patil-57267b2a3/">
-                            <div class="social-logos">
-                                <i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i>
-                            </div>
+                                <div class="social-logos">
+                                    <i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i>
+                                </div>
                             </a>
                             <a href="https://github.com/Pritesh2004">
-                            <div class="social-logos">
-                                <i class="fa fa-github social-icon" aria-hidden="true"></i>
-                            </div>
+                                <div class="social-logos">
+                                    <i class="fa fa-github social-icon" aria-hidden="true"></i>
+                                </div>
                             </a>
                         </div>
 
@@ -85,30 +85,63 @@
         </div>
 
 
-        <div id="message-div" data-aos="fade-up"  data-aos-delay="1000"  data-aos-offset="0" data-aos-anchor=".anchor">
+        <div id="message-div" data-aos="fade-up" data-aos-delay="1000" data-aos-offset="0" data-aos-anchor=".anchor">
             <div id="sub-heading-div">
                 <h2 id="sub-heading">How can i help you?</h2>
             </div>
-            <form #mailForm="ngForm" (ngSubmit)="sendEmail()">
+            <form [formGroup]="mail" (ngSubmit)="sendEmail()" novalidate>
                 <div id="name-email">
-                    <input required  [(ngModel)]="mail.name" type="text" name="name" placeholder="Your Name" class="name-email">
-                    <input [(ngModel)]="mail.email" type="email" name="email" placeholder="Your Email" class="name-email email">
-                </div>
+                    <mat-form-field appearance="outline" class="name-email">
+                        <mat-label>Your Name</mat-label>
+                        <input matInput formControlName="name" placeholder="Enter Your Name">
+                        <mat-error *ngIf="mail.controls['name'].hasError('required')">Name is required</mat-error>
+                    </mat-form-field>
 
+                    <mat-form-field appearance="outline" class="name-email">
+                        <mat-label>Your Email</mat-label>
+                        <input matInput formControlName="email" placeholder="Enter Your Email">
+                        <mat-error *ngIf="mail.controls['email'].hasError('required')">Email is required</mat-error>
+                        <mat-error *ngIf="mail.controls['email'].hasError('email')">Invalid email format</mat-error>
+                    </mat-form-field>
+                </div>
                 <div id="subject">
-                    <input required [(ngModel)]="mail.subject" type="text" name="subject" placeholder="Subject" class="subject">
+                    <mat-form-field appearance="outline" class="subject">
+                        <mat-label>Subject</mat-label>
+                        <input matInput formControlName="subject" placeholder="Enter Your Subject">
+                        <mat-error *ngIf="mail.controls['subject'].hasError('required')">Subject is required</mat-error>
+                    </mat-form-field>
                 </div>
                 <div id="message">
-                    <textarea required [(ngModel)]="mail.message" name="message" cols="30" rows="8" placeholder="Message" class="message"></textarea>
+                    <mat-form-field appearance="outline" class="message">
+                        <mat-label>Message</mat-label>
+                        <textarea matInput formControlName="message" cols="30" rows="8" placeholder="Enter Message"></textarea>
+                        <mat-error *ngIf="mail.controls['message'].hasError('required')">Message is required</mat-error>
+                    </mat-form-field>
                 </div>
                 <div id="btn">
-                    <button id="sub-btn" >Send Message</button>
-                </div>
+                    <button id="sub-btn" type="submit" [disabled]="mail.invalid || mail.pristine">Send Message</button>
 
+                </div>
             </form>
         </div>
 
 
     </div>
 </div>
-    <app-footer></app-footer>
+<app-footer></app-footer>
+
+<!-- 
+    <div id="name-email">
+        <input required  [(ngModel)]="mail.name" type="text" name="name" placeholder="Your Name" class="name-email">
+        <input [(ngModel)]="mail.email" type="email" name="email" placeholder="Your Email" class="name-email email">
+    </div>
+
+    <div id="subject">
+        <input required [(ngModel)]="mail.subject" type="text" name="subject" placeholder="Subject" class="subject">
+    </div>
+    <div id="message">
+        <textarea required [(ngModel)]="mail.message" name="message" cols="30" rows="8" placeholder="Message" class="message"></textarea>
+    </div>
+    <div id="btn">
+        <button id="sub-btn" >Send Message</button>
+    </div> -->
