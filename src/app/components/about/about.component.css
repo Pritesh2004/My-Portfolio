@@ -16,7 +16,7 @@
 #title-hr-about {
     height: 3.1px;
     background-color: #18222b;
-    width: 62% !important;
+    width: 70% !important;
 
 }
 
@@ -38,7 +38,7 @@
 @media screen and (max-width:500px) {
 
     #title-hr-about {
-    width: 57% !important;
+    width: 65% !important;
     }
 
     #title-hr-resume {
