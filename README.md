@@ -1,6 +1,12 @@
 # MyPortfolio
 
+Welcome to my personal portfolio, an interactive and visually captivating representation of my journey, skills, and accomplishments. Crafted with Angular, this sleek and responsive website provides a seamless navigation experience, guiding you through my educational background, diverse skill set, impactful projects, and a detailed resume. Enhancing user interaction, my portfolio integrates a robust email service developed with Spring Boot. Whether you have inquiries, collaboration proposals, or just want to connect, this feature ensures a reliable and secure channel for communication.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+
+## Tech Stack
+
+HTML, CSS, ANGULAR, SPRING BOOT, JAVA, AOS(Animate on scroll).
 
 ## Development server
 
