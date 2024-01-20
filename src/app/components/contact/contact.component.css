@@ -14,7 +14,7 @@
     margin-left: 8%;
     margin-bottom: 35px;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     display: flex;
     flex-direction: column;
 }
@@ -42,9 +42,7 @@
     width: 55% !important;
     }
 
-    #contact {
-    padding-bottom: 150px;
-    }
+   
 }
 
 
@@ -341,6 +339,11 @@ margin-left: 27px;
 
 
 @media screen and (max-width:500px) {
+
+    #contact {
+   
+        padding-bottom: 130px;
+         }
 
     #btn{
         padding-bottom: 50px;
