@@ -31,7 +31,7 @@ export class ContactComponent implements OnInit {
   }
 
   refreshPage() {
-    window.location.href = "/contact"
+    window.location.href = "/"
   }
 
   sendEmail() {

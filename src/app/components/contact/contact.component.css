@@ -41,6 +41,10 @@
     #title-hr-contacts {
     width: 55% !important;
     }
+
+    #contact {
+    padding-bottom: 150px;
+    }
 }
 
 
@@ -337,6 +341,10 @@ margin-left: 27px;
 
 
 @media screen and (max-width:500px) {
+
+    #btn{
+        padding-bottom: 50px;
+    }
 
     #message-div {
     
