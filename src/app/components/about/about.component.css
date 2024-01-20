@@ -31,7 +31,7 @@
 #title-hr-resume {
     height: 3.1px;
     background-color: #18222b;
-    width: 60% !important;
+    width: 75% !important;
 
 }
 
@@ -42,7 +42,7 @@
     }
 
     #title-hr-resume {
-    width: 52% !important;
+    width: 68% !important;
     }
 }
 
@@ -133,6 +133,9 @@
     line-height: 25px;
     margin-top: 20px;
     font-weight: 400;
+    text-align: justify;
+
+    
 
 }
 
