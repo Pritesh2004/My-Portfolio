@@ -36,7 +36,16 @@ export class ContactComponent implements OnInit {
 
   sendEmail() {
 
+    Swal.fire({
+      title: "Service is temporarily unavailable",
+      text: "Mail me directly to patilpritesh7277@gmail.com",
+      icon: "error",
+      confirmButtonText: 'OK',
+    });
+
     this.emailService.sendEmail(this.mail.value).subscribe(
+
+     
 
       (data) => {
         console.log('Email sent successfully:' + data);
