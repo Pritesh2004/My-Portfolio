@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NavigationEnd, Router } from '@angular/router';
 import { EmailServiceService } from 'src/app/email-service.service';
 import Swal from 'sweetalert2';
+import { NgxUiLoaderService } from "ngx-ui-loader"; // Import NgxUiLoaderService
 
 @Component({
   selector: 'app-contact',
@@ -21,7 +22,7 @@ export class ContactComponent implements OnInit {
   mail: FormGroup;
 
 
-  constructor(private emailService: EmailServiceService, private router: Router, private fb: FormBuilder) {
+  constructor(private emailService: EmailServiceService, private router: Router, private fb: FormBuilder, private ngxService: NgxUiLoaderService) {
     this.mail = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -35,33 +36,28 @@ export class ContactComponent implements OnInit {
   }
 
   sendEmail() {
-
-    Swal.fire({
-      title: "Service is temporarily unavailable",
-      text: "Mail me directly to patilpritesh7277@gmail.com",
-      icon: "error",
-      confirmButtonText: 'OK',
-    });
+    this.ngxService.start();
 
     this.emailService.sendEmail(this.mail.value).subscribe(
 
      
 
       (data) => {
-        console.log('Email sent successfully:' + data);
+        console.log('Email sent successfully:', data);
         console.log(this.mail);
-
+        this.ngxService.stop();
         Swal.fire({
-          title: "Email Recieved",
-          text: "Wait for my reply",
-          icon: "success",
-          confirmButtonText: 'OK',
+            title: "Email Received",
+            text: "Thank you for reaching out. I will respond shortly.",
+            icon: "success",
+            confirmButtonText: 'OK',
         }).then((result) => {
-          if (result.isConfirmed) {
-            this.refreshPage();
-          }
+            if (result.isConfirmed) {
+                this.refreshPage();
+            }
         });
-      },
+    },
+    
 
       (error) => {
         console.error('Error sending email:' + error);

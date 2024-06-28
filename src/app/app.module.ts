@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MyServicesComponent } from './components/my-services/my-services.component';
 import { ReactiveFormsModule } from '@angular/forms';  // Import ReactiveFormsModule
+import { NgxUiLoaderModule } from "ngx-ui-loader";
 
 
 
@@ -43,6 +44,7 @@ import { ReactiveFormsModule } from '@angular/forms';  // Import ReactiveFormsMo
     HttpClientModule,
     MatInputModule,
     ReactiveFormsModule,
+    NgxUiLoaderModule,
     FormsModule,
     MatIconModule,
     MatTooltipModule,
