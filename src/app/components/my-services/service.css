@@ -25,7 +25,6 @@
 }
 
 
-
 #project1-img-div {
     height: 82%;
     width: 100%;
@@ -45,7 +44,29 @@
 
 }
 
+#project3-img-div {
+    height: 82%;
+    width: 100%;
+    padding-top: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
 #project1-img {
+    width: 70%;
+    background-image: url(./../../../assets/project3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#project3-img {
     width: 70%;
     background-image: url(./../../../assets/a3.png);
     background-size: 100% 100%;
