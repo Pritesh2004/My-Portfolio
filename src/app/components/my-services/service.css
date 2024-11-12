@@ -25,7 +25,7 @@
 }
 
 
-#project1-img-div {
+#project-img-div {
     height: 82%;
     width: 100%;
     padding-top: 15%;
@@ -34,24 +34,6 @@
     flex-direction: row;
 }
 
-#project2-img-div {
-    height: 82%;
-    padding-top: 15%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-}
-
-#project3-img-div {
-    height: 82%;
-    width: 100%;
-    padding-top: 15%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
 
 
 #project1-img {
@@ -70,6 +52,18 @@
     width: 70%;
     background-image: url(./../../../assets/a3.png);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#project4-img {
+    width: 70%;
+    background-image: url(./../../../assets/ChatApp.png);
+    background-size: 100% 70%;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
